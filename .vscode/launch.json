@@ -4,10 +4,10 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
+         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open index.html",
+            "name": "Launch Chrome against localhost",
             "file": "${workspaceFolder}/index.html"
           }
     ]

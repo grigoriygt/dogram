@@ -1,4 +1,4 @@
-@font-face {/*thumbnail-миниатюра/ноготь большого пальца. anchor-якорь*/
+@font-face {/*ссылки на шрифты /*thumbnail-миниатюра/ноготь большого пальца. anchor-якорь*/
     font-family: lakeshor;
     src: url("fonts/LAKESHOR-webfont.svg");
     src: url("fonts/LAKESHOR-webfont.woff");
@@ -33,6 +33,11 @@ body {
     padding: 0;
     padding-top: 2.5vh;
 }
+.hidden .thumbnails-list {
+    flex-direction: column;
+    max-height: 80vh;
+    flex-wrap: nowrap;
+}
 .thumbnails-image {
     width: var(--thumbnails-image-width);
     height: var(--thumbnails-image-height);
@@ -57,6 +62,14 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.hide-button {
+    position:absolute;
+    right: 10vw;
+    top: 2vw;
+}
+.hidden .details-container {
+    display: none;
+}
 .thumbnails-title {
     display: block;
     text-align: center;
@@ -74,6 +87,10 @@ body {
     min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
     border-radius: 15%;
     overflow: hidden;
+}
+.selected.thumbnails-item {
+    border-radius: 0;
+    border: 3px solid green;
 }
 .thumbnails-anchor {
     text-decoration: none;
